@@ -1,0 +1,14 @@
+.logo {
+  width: 180px;
+  height: auto;
+}
+
+.user-profile {
+  width: 40px;
+  height: auto;
+}
+
+.navigation-nav {
+  padding: 15px 3%;
+  border-bottom: 1px solid black;
+}

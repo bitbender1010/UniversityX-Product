@@ -1,0 +1,55 @@
+.sidebar {
+  /* width: 30%; */
+  /* background: red; */
+  padding: 20px 10%;
+  border-right: 1px solid black;
+  min-height: 90vh;
+}
+
+.sidebar ul img {
+  width: 28px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.sidebar ul li {
+  font-size: 20px;
+  margin-bottom: 10px;
+  padding: 10px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.sidebar ul li:hover {
+  background: #9c2d9c;
+  color: white;
+}
+
+.sidebar ul li:hover .svg-cover svg path {
+  fill: white;
+}
+
+/* svg path:hover {
+  fill: white !important;
+  outline: white !important;
+  color: white !important;
+  background: white;
+} */
+
+.big-side-ico {
+  width: 35px !important;
+  height: auto;
+}
+
+.sidebar ul li span {
+  margin-left: 20px;
+}
+
+.icon-padding {
+  padding: 2px;
+}
+
+.svg-cover svg {
+  width: 25px;
+  height: auto;
+}

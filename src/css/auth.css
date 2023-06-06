@@ -1,0 +1,105 @@
+.auth-parent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.ca-logo img {
+  width: 180px;
+  height: auto;
+}
+
+.ca-logo {
+  /* background: red; */
+  width: 100%;
+  padding: 20px 10%;
+}
+
+.auth-right img {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+  width: 100%;
+  min-height: calc(100vh - 50px);
+  height: calc(100vh - 100px);
+  border-radius: 20px;
+  border: 2px solid black;
+  object-position: center;
+}
+
+.cre-acc-txt {
+  font-size: 25px;
+}
+
+.auth-parent input {
+  border: 1px solid black;
+  display: block;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  text-indent: 10px;
+}
+
+.auth-left-inner {
+  padding: 20px 20%;
+}
+
+.auth-right {
+  padding: 25px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+.ca-btn {
+  display: block;
+  background: #9c2d9c;
+  border-radius: 5px;
+  width: 100%;
+  color: white;
+  margin-top: 50px;
+}
+
+.google-btn {
+  display: flex;
+  background: white;
+  justify-content: center;
+  border-radius: 5px;
+  width: 100%;
+  color: black;
+  margin-top: 10px;
+  gap: 10px;
+  border: 1px solid black;
+}
+
+.google-btn img {
+  width: 20px;
+  height: auto;
+}
+
+.ahaa-sub {
+  text-align: center;
+  margin: 20px 0px;
+}
+
+/*Media Query*/
+@media (max-width: 768px) {
+  .auth-parent {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .auth-right img {
+    min-height: 400px;
+    height: 400px;
+  }
+
+  .ca-logo {
+    padding: 20px 10px;
+  }
+
+  .auth-left-inner {
+    padding: 20px;
+  }
+}
