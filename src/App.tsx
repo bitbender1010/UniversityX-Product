@@ -5,7 +5,7 @@ import logo from './images/UniversityX-Logo.png'
 import not from './images/not-icon.png'
 import heroimg from './images/student-heroimg.png'
 
-import Icon1 from './images/icon-1.png'
+// import Icon1 from './images/icon-1.png'
 
 function App() {
 
@@ -58,68 +58,7 @@ function App() {
     {/* Bottom DIV */}
     <div className='bottom-div'> </div>
 
-    {/* Feature Set */}
-    <div>
-      <div className='feature-set-text font-medium'>UniversityX provides you with everything you need to excel in school</div>
-
-    <div className='feature-container'>
-      {/* Feature One */}
-      <div className='feature-div-parent'>
-      <div className='feature-div'>
-        <img src={Icon1}/>
-        <div className='fd-text font-medium'>HD Lecture Videos</div>
-        <div className='fd-sub'> Watch high quality lecture videos by your university lecturers. Watch high quality lecture videos by your university lecturers. </div>
-      </div>
-      </div>
-
-      {/* Feature Two */}
-      <div className='feature-div-parent'>
-      <div className='feature-div'>
-        <img src={Icon1}/>
-        <div className='fd-text font-medium'>HD Lecture Videos</div>
-        <div className='fd-sub'> Watch high quality lecture videos by your university lecturers. Watch high quality lecture videos by your university lecturers. </div>
-      </div>
-      </div>
-
-      {/* Feature Three */}
-      <div className='feature-div-parent'>
-      <div className='feature-div'>
-        <img src={Icon1}/>
-        <div className='fd-text font-medium'>HD Lecture Videos</div>
-        <div className='fd-sub'> Watch high quality lecture videos by your university lecturers. Watch high quality lecture videos by your university lecturers. </div>
-      </div>
-      </div>
-
-      {/* Feature Four */}
-      <div className='feature-div-parent'>
-      <div className='feature-div'>
-        <img src={Icon1}/>
-        <div className='fd-text font-medium'>HD Lecture Videos</div>
-        <div className='fd-sub'> Watch high quality lecture videos by your university lecturers. Watch high quality lecture videos by your university lecturers. </div>
-      </div>
-      </div>
-
-      {/* Feature Five */}
-      <div className='feature-div-parent'>
-      <div className='feature-div'>
-        <img src={Icon1}/>
-        <div className='fd-text font-medium'>HD Lecture Videos</div>
-        <div className='fd-sub'> Watch high quality lecture videos by your university lecturers. Watch high quality lecture videos by your university lecturers. </div>
-      </div>
-      </div>
-
-      {/* Feature Six */}
-      <div className='feature-div-parent'>
-      <div className='feature-div'>
-        <img src={Icon1}/>
-        <div className='fd-text font-medium'>HD Lecture Videos</div>
-        <div className='fd-sub'> Watch high quality lecture videos by your university lecturers. Watch high quality lecture videos by your university lecturers. </div>
-      </div>
-      </div>
-
-    </div>
-
-    </div>
+   
 
     </>
   )
