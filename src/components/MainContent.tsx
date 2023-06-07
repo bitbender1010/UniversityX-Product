@@ -25,6 +25,7 @@ function MainContent() {
             </div>
 
             {/* Course Cards */}
+            <a href={`/dashboard/courses`}>
             <div className='flex justify-between items-start course-card'>
                 <div>Computer as a Problem Solving Tool (CSC 120)</div>
 
@@ -33,7 +34,9 @@ function MainContent() {
                     <img src={ArrowIcon} className='arrow-icon'/>
                 </div>
             </div>
+            </a>
 
+            <a href={`/dashboard/courses`}>
             <div className='flex justify-between items-start course-card'>
                 <div>Software Workshop (CSC 104)</div>
 
@@ -42,7 +45,9 @@ function MainContent() {
                     <img src={ArrowIcon} className='arrow-icon'/>
                 </div>
             </div>
+            </a>
 
+            <a href={`/dashboard/courses`}>
             <div className='flex justify-between items-start course-card'>
                 <div>Principles of computer organization (CSC 112)</div>
 
@@ -51,7 +56,9 @@ function MainContent() {
                     <img src={ArrowIcon} className='arrow-icon'/>
                 </div>
             </div>
+            </a>
 
+            <a href={`/dashboard/courses`}>
             <div className='flex justify-between items-start course-card'>
                 <div>Calculus (MAT 112)</div>
 
@@ -60,6 +67,7 @@ function MainContent() {
                     <img src={ArrowIcon} className='arrow-icon'/>
                 </div>
             </div>
+            </a>
 
 
         </div>
