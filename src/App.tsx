@@ -48,6 +48,11 @@ function App() {
         <a href={`/dashboard`}>
           <button className='get-started mt-10 font-medium'>Try Demo</button> 
         </a>
+
+        {/* Reserve Username */}
+        <a className='reserve-name' href={`https://bit.ly/unix-socials`}>
+          or <span className='font-medium'> Reserve Username </span>
+        </a>
       </div>
 
       <div> 

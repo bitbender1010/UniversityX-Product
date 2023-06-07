@@ -117,3 +117,10 @@
   width: 20px;
   height: auto;
 }
+
+/*Mobile*/
+@media (max-width: 768px) {
+  .main-content {
+    padding: 20px;
+  }
+}

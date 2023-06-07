@@ -2,3 +2,11 @@
   display: grid;
   grid-template-columns: 30% 70%;
 }
+
+/*Mobile*/
+@media (max-width: 768px) {
+  .custom-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

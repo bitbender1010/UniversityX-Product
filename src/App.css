@@ -153,3 +153,13 @@
     display: inline-flex !important;
   }
 }
+
+/*Hacka*/
+.reserve-name {
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+.reserve-name span {
+  margin-left: 10px;
+}
