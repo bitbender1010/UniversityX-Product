@@ -35,6 +35,7 @@ function CourseContent() {
             </div>
             </a>
 
+            <a href={`/dashboard/courses/details`}>
             <div className='flex course-card justify-between items-start relative'>
                 <div className='flex'>
                     <div className='course-num course-num-active'>2</div>
@@ -47,7 +48,9 @@ function CourseContent() {
 
                 <div className='long-line'> </div>
             </div>
+            </a>
 
+            <a href={`/dashboard/courses/details`}>
             <div className='flex course-card justify-between items-start relative'>
                 <div className='flex'>
                     <div className='course-num course-num-active'>3</div>
@@ -58,7 +61,9 @@ function CourseContent() {
                     <img src={ArrowIcon} className='arrow-icon'/>
                 </div>
             </div>
+            </a>
 
+            <a href={`/dashboard/courses/details`}>
             <div className='flex course-card justify-between items-start'>
                 <div className='flex'>
                     <div className='course-num course-num-inactive'>4</div>
@@ -69,7 +74,9 @@ function CourseContent() {
                     <img src={ArrowIcon} className='arrow-icon'/>
                 </div>
             </div>
+            </a>
 
+            <a href={`/dashboard/courses/details`}>
             <div className='flex course-card justify-between items-start'>
                 <div className='flex'>
                     <div className='course-num course-num-inactive'>5</div>
@@ -80,6 +87,7 @@ function CourseContent() {
                     <img src={ArrowIcon} className='arrow-icon'/>
                 </div>
             </div>
+            </a>
         
         </div>
         </>
