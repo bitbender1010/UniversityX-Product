@@ -1,6 +1,6 @@
 import Logo from '../images/UniversityX-Logo.png'
 import AuthImage from '../images/auth-image.png'
-import GoogleImg from '../images/google-icon.svg'
+// import GoogleImg from '../images/google-icon.svg'
 import '../css/auth.css'
 
 function CreateAccount() {
@@ -13,18 +13,18 @@ function CreateAccount() {
 
                     <div className='auth-left-inner'>
                         <div className='cre-acc-txt font-medium'>Create an account</div>
+                        <div className='disclaimer'><span>Disclaimer:</span> UniversityX is currently available to only a few selected Schools</div>
 
-                        <form method="POST" action="/submit">
-                            <input type="firstname" name="firstname" placeholder='First Name' />
-                            <input type="lastname" name="lastname" placeholder='Last Name'/>
+                        <form name="contact-form" method="POST" data-netlify="true" action="/dashboard">
+                            <input type="text" name="firstname" placeholder='First Name' />
+                            <input type="text" name="lastname" placeholder='Last Name'/>
                             <input type="email" name="email" placeholder='Email Address' />
                             <input type="password" name="password" placeholder='Password' />
 
-                            {/* <input type="submit" value="Submit" /> */}
-                            <button className='ca-btn'>Create Account</button>
-                            <button className='google-btn'> <img src={GoogleImg}/> Signup with Google</button>
+                            <button className='ca-btn' type='submit'>Create Account</button>
+                            {/* <button className='google-btn'> <img src={GoogleImg}/> Signup with Google</button> */}
                             
-                            <div className='ahaa-sub'> Already have an account? <span className='font-medium'>Login</span> </div>
+                            <div className='ahaa-sub'> Already have an account? <a href={`/createaccount`}> <span className='font-medium'>Login</span> </a> </div>
                         </form>
 
                     </div>

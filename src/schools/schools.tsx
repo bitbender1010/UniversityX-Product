@@ -2,8 +2,8 @@
 
 import '../App.css'
 import logo from '../images/UniversityX-Logo.png'
-// import not from '../images/not-icon.png'
-// import heroimg from '../images/student-heroimg.png'
+import not from '../images/not-icon.png'
+import heroimg from '../images/student-heroimg.png'
 
 import Icon1 from '../images/icon-1.png'
 
@@ -40,20 +40,20 @@ function Schools() {
     </nav>
 
     {/* Hero Section */}
-    {/* <div className='grid grid-cols-2 mt-10 grid-hero-left'>
+    <div className='grid grid-cols-2 mt-10 grid-hero-left'>
       <div className='body-padding-left'> 
-        <h1 className='font-semibold'>Study Smarter</h1>
-        <div className='flex items-center'> <img src={not} className='not-icon'/> <h1 className='font-semibold'>Harder...</h1> </div>
-        <div className='text mt-5'>Access online classes, download resources and collaborate with your friends, all in one app.</div>
+        <div className='flex items-center'> <img src={not} className='not-icon'/> <h1 className='font-semibold'>Just Another</h1> </div>
+        <h1 className='font-semibold'>L.M.S for Univesities</h1>
+        <div className='text mt-5'>We combine e-learning, analytics and collaboration tools to enhance students learning experience</div>
         <a href={`/dashboard`}>
-          <button className='get-started mt-10 font-medium'>Try Demo</button> 
+          <button className='get-started mt-10 font-medium'>Contact Us</button> 
         </a>
       </div>
 
       <div> 
         <img src={heroimg} className='hero-img'/>
       </div>
-    </div> */}
+    </div>
 
     {/* Bottom DIV */}
     <div className='bottom-div'> </div>

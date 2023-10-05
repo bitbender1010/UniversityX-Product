@@ -54,7 +54,7 @@ form {
 
 .ca-btn {
   display: block;
-  background: #9c2d9c;
+  background: #9c2d9c!important;
   border-radius: 5px;
   width: 100%;
   color: white;
@@ -81,6 +81,16 @@ form {
 .ahaa-sub {
   text-align: center;
   margin: 20px 0px;
+}
+
+/*discliamer*/
+.disclaimer span {
+  color: red;
+  font-weight: 600;
+}
+
+.disclaimer {
+  margin-top: 20px;
 }
 
 /*Media Query*/

@@ -5,7 +5,14 @@ import logo from './images/UniversityX-Logo.png'
 import not from './images/not-icon.png'
 import heroimg from './images/student-heroimg.png'
 
-// import Icon1 from './images/icon-1.png'
+import Icon1 from './images/icons/1.png'
+import Icon2 from './images/icons/2.png'
+import Icon3 from './images/icons/3.png'
+import Icon4 from './images/icons/4.png'
+import Icon5 from './images/icons/5.png'
+import Icon6 from './images/icons/6.png'
+import Icon7 from './images/icons/7.png'
+import Icon8 from './images/icons/8.png'
 
 function App() {
 
@@ -44,14 +51,14 @@ function App() {
       <div className='body-padding-left'> 
         <h1 className='font-semibold'>Study Smarter</h1>
         <div className='flex items-center'> <img src={not} className='not-icon'/> <h1 className='font-semibold'>Harder...</h1> </div>
-        <div className='text mt-5'>Access online classes, download resources and collaborate with your friends, all in one app.</div>
+        <div className='text mt-5'>Access online classes, download resources, track your progress and collaborate with friends, all in one app</div>
         <a href={`/dashboard`}>
           <button className='get-started mt-10 font-medium'>Try Demo</button> 
         </a>
 
         {/* Reserve Username */}
         <a className='reserve-name' href={`https://bit.ly/unix-socials`}>
-          or <span className='font-medium'> Reserve Username </span>
+          or <span className='font-medium'> Login into your account </span>
         </a>
       </div>
 
@@ -63,7 +70,68 @@ function App() {
     {/* Bottom DIV */}
     <div className='bottom-div'> </div>
 
-   
+       {/* Feature Set */}
+       <div>
+      <div className='feature-set-text font-medium'>UniversityX provides you with everything you need to excel in school</div>
+
+    <div className='feature-container'>
+      {/* Feature One */}
+      <div className='feature-div-parent'>
+      <div className='feature-div'>
+        <img src={Icon1}/>
+        <div className='fd-text font-medium'>E-Library</div>
+        <div className='fd-sub'> Access a digital library where you can conveniently download lecture notes, e-books, and essential study materials, ensuring you have resources at your fingertips.</div>
+      </div>
+      </div>
+
+      {/* Feature Two */}
+      <div className='feature-div-parent'>
+      <div className='feature-div'>
+        <img src={Icon2}/>
+        <div className='fd-text font-medium'>AI Assistant</div>
+        <div className='fd-sub'> Harness the power of artificial intelligence to receive instant answers to your academic questions, providing valuable support and guidance throughout your learning journey. </div>
+      </div>
+      </div>
+
+      {/* Feature Three */}
+      <div className='feature-div-parent'>
+      <div className='feature-div'>
+        <img src={Icon3}/>
+        <div className='fd-text font-medium'>Xtra Classes</div>
+        <div className='fd-sub'> Access a wealth of supplementary online tutorials and resources from indpendent creators, designed to deepen your understanding and boost your academic performance. </div>
+      </div>
+      </div>
+
+      {/* Feature Four */}
+      <div className='feature-div-parent'>
+      <div className='feature-div'>
+        <img src={Icon5}/>
+        <div className='fd-text font-medium'>Collaboration Tools</div>
+        <div className='fd-sub'> Engage and collaborate seamlessly with your peers through various tools like groups, forums, quizzes, and flashcards, fostering a dynamic and interactive learning environment. </div>
+      </div>
+      </div>
+
+      {/* Feature Five */}
+      <div className='feature-div-parent'>
+      <div className='feature-div'>
+        <img src={Icon7}/>
+        <div className='fd-text font-medium'>Progress Tracking</div>
+        <div className='fd-sub'> Stay informed about your academic progress with comprehensive tracking tools, enabling you to make data-driven decisions about your studies. </div>
+      </div>
+      </div>
+
+      {/* Feature Six */}
+      <div className='feature-div-parent'>
+      <div className='feature-div'>
+        <img src={Icon8}/>
+        <div className='fd-text font-medium'>Offline Access</div>
+        <div className='fd-sub'> Benefit from a mobile-friendly platform that allows you to download resources for offline access, ensuring uninterrupted learning, even without an internet connection.  </div>
+      </div>
+      </div>
+
+    </div>
+
+    </div>
 
     </>
   )

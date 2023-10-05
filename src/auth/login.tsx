@@ -1,6 +1,6 @@
 import Logo from '../images/UniversityX-Logo.png'
 import AuthImage from '../images/auth-image.png'
-import GoogleImg from '../images/google-icon.svg'
+// import GoogleImg from '../images/google-icon.svg'
 import '../css/auth.css'
 
 function Login() {
@@ -13,16 +13,17 @@ function Login() {
 
                     <div className='auth-left-inner'>
                         <div className='cre-acc-txt font-medium'>Login into an account</div>
+                        <div className='disclaimer'><span>Disclaimer:</span> UniversityX is currently available to only a few selected Schools</div>
 
                         <form method="POST" action="/submit">
-                            <input type="email" name="email" placeholder='Email Address' />
+                            <input type="email" name="email" placeholder='School Email Address' />
                             <input type="password" name="password" placeholder='Password' />
 
                             {/* <input type="submit" value="Submit" /> */}
                             <button className='ca-btn'>Login</button>
-                            <button className='google-btn'> <img src={GoogleImg}/> Login with Google</button>
+                            {/* <button className='google-btn'> <img src={GoogleImg}/> Login with Google</button> */}
                             
-                            <div className='ahaa-sub'>Don't have an account? <span className='font-medium'>Signup</span> </div>
+                            <div className='ahaa-sub'>Don't have an account? <a href={`/createaccount`}> <span className='font-medium'>Signup</span> </a> </div>
                         </form>
 
                     </div>
