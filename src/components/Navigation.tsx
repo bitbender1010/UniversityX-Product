@@ -9,7 +9,7 @@ function Navigation() {
         <>
             <nav className='flex items-center justify-between navigation-nav'>
                 <div> 
-                    <img src={Logo} className='logo'/>
+                <a href={`/`}> <img src={Logo} className='logo'/> </a>
                 </div>
 
                 <div>

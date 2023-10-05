@@ -14,6 +14,9 @@ import Icon5 from './images/icons/5.png'
 import Icon7 from './images/icons/7.png'
 import Icon8 from './images/icons/8.png'
 
+import Nigeria from './images/nigeria.png'
+import Love from './images/love.png'
+
 function App() {
 
   return (
@@ -30,15 +33,15 @@ function App() {
       <div className="hidden top-navbar w-full lg:inline-flex lg:flex-grow lg:w-auto nav-items" id="navigation">
         <div className="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto">
           
-          <a href="#" className="lg:inline-flex px-5 py-2 rounded items-center justify-center hover:bg-gray-900 hover:text-white">
+          <a href={`/schools`} className="lg:inline-flex px-5 py-2 rounded items-center justify-center hover:bg-gray-900 hover:text-white">
             <span>For Schools</span>
           </a>
-
+         
           <a href="#" className="lg:inline-flex px-5 py-2 rounded items-center justify-center hover:bg-gray-900 hover:text-white">
             <span>Contact Us</span>
           </a>
 
-          <a href="#" className="lg:inline-flex px-5 py-2 rounded items-center justify-center hover:bg-gray-900 hover:text-white">
+          <a href={`/login`} className="lg:inline-flex px-5 py-2 rounded items-center justify-center hover:bg-gray-900 hover:text-white">
             <span>Login</span>
           </a>
 
@@ -71,7 +74,7 @@ function App() {
     <div className='bottom-div'> </div>
 
        {/* Feature Set */}
-       <div>
+<div>
       <div className='feature-set-text font-medium'>UniversityX provides you with everything you need to excel in school</div>
 
     <div className='feature-container'>
@@ -131,7 +134,14 @@ function App() {
 
     </div>
 
-    </div>
+</div>
+
+{/* Footer */}
+<div className='footer'>
+<img src={Nigeria}/> 
+<div> Made for Students by Students </div>
+<img src={Love}/>
+</div>
 
     </>
   )

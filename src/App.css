@@ -163,3 +163,19 @@
 .reserve-name span {
   margin-left: 10px;
 }
+
+.footer {
+  margin: 100px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer img {
+  width: 30px;
+  height: auto;
+  margin: 0px 10px;
+}

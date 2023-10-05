@@ -11,6 +11,8 @@ import CourseDetailsDashboard from './students/coursedetailsdashboard.tsx'
 import CreateAccount from './auth/createaccount.tsx'
 import Login from './auth/login.tsx'
 import Schools from './schools/schools.tsx'
+import Error from './result/error.tsx'
+import Enroll from './result/enroll.tsx'
 
 import './index.css'
 
@@ -43,6 +45,14 @@ const router = createBrowserRouter([
   {
     path: "/schools",
     element: <Schools />
+  },
+  {
+    path: "/error",
+    element: <Error />
+  },
+  {
+    path: "/enroll",
+    element: <Enroll />
   }
   
 ])

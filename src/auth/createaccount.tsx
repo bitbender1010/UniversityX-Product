@@ -9,7 +9,7 @@ function CreateAccount() {
         <>
             <div className='auth-parent'>
                 <div className='auth-left'>
-                    <div className='ca-logo'> <img src={Logo}/> </div>
+                <a href={`/`}> <div className='ca-logo'> <img src={Logo}/> </div> </a>
 
                     <div className='auth-left-inner'>
                         <div className='cre-acc-txt font-medium'>Create an account</div>
