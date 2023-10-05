@@ -33,7 +33,7 @@ function App() {
       <div className="hidden top-navbar w-full lg:inline-flex lg:flex-grow lg:w-auto nav-items" id="navigation">
         <div className="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto">
           
-          <a href={`/schools`} className="lg:inline-flex px-5 py-2 rounded items-center justify-center hover:bg-gray-900 hover:text-white">
+          <a href={`#`} className="lg:inline-flex px-5 py-2 rounded items-center justify-center hover:bg-gray-900 hover:text-white">
             <span>For Schools</span>
           </a>
          

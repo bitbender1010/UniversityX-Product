@@ -16,7 +16,7 @@ function Error() {
                         <div className='disclaimer'><span>Disclaimer:</span> UniversityX is currently available to only a few selected Schools</div>
 
                             
-                        <a href={`/`}> <div className='go-back'> Go back to homepage </div> </a>
+                        <a href={`/dashboard`}> <div className='go-back'> Checkout our Demo product </div> </a>
                     </div>
                 </div>
 
