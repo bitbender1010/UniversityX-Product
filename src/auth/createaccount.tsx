@@ -15,7 +15,9 @@ function CreateAccount() {
                         <div className='cre-acc-txt font-medium'>Create an account</div>
                         <div className='disclaimer'><span>Disclaimer:</span> UniversityX is currently available to only a few selected Schools</div>
 
-                        <form name="contact-form" method="POST" data-netlify="true" action="/dashboard">
+                        <form name="new-acc-form" method="POST" data-netlify="true">
+                            <input type="hidden" name="form-name" value="new-acc-form" />
+
                             <input type="text" name="firstname" placeholder='First Name' />
                             <input type="text" name="lastname" placeholder='Last Name'/>
                             <input type="email" name="email" placeholder='Email Address' />

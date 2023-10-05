@@ -57,7 +57,7 @@ function App() {
         </a>
 
         {/* Reserve Username */}
-        <a className='reserve-name' href={`https://bit.ly/unix-socials`}>
+        <a className='reserve-name' href={`login`}>
           or <span className='font-medium'> Login into your account </span>
         </a>
       </div>
