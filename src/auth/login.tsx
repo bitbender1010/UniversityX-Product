@@ -24,23 +24,6 @@ function Login() {
                             {/* <button className='google-btn'> <img src={GoogleImg}/> Login with Google</button> */}
                             
                             <div className='ahaa-sub'>Don't have an account? <a href={`/createaccount`}> <span className='font-medium'>Signup</span> </a> </div>
-                    
-                                    {/* Form */}
-                <form name="contact-form" method="POST" data-netlify="true">
-                    <input type="hidden" name="form-name" value="contact-form" />
-
-                    <label>Email Address</label>
-                    <input type='email' name='email-address'/>
-                    
-                    <label>First Name</label>
-                    <input type='text' name='first-name'/>
-
-                    <label>Last Name</label>
-                    <input type='text' name='last-name'/>
-
-                    <button type='submit' className='gea'> Get Early Access </button>
-                </form>
-                
 
                     </div>
                 </div>

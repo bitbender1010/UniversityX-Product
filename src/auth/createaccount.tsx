@@ -26,7 +26,7 @@ function CreateAccount() {
                             <a href={`/enroll`}> <button className='ca-btn' type='submit'>Create Account</button> </a>
                             {/* <button className='google-btn'> <img src={GoogleImg}/> Signup with Google</button> */}
                             
-                            <div className='ahaa-sub'> Already have an account? <a href={`/createaccount`}> <span className='font-medium'>Login</span> </a> </div>
+                            <div className='ahaa-sub'> Already have an account? <a href={`/login`}> <span className='font-medium'>Login</span> </a> </div>
                         {/* </form> */}
 
                     </div>
