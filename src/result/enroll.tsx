@@ -18,6 +18,7 @@ function Enroll() {
                             
                         <a href={`/dashboard`}> <div className='go-back'> Checkout our Demo product </div> </a>
                     </div>
+
                 </div>
 
                 <div className='auth-right'>
