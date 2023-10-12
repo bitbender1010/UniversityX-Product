@@ -15,19 +15,20 @@ function CreateAccount() {
                         <div className='cre-acc-txt font-medium'>Create an account</div>
                         <div className='disclaimer'><span>Disclaimer:</span> UniversityX is currently available to only a few selected Schools</div>
 
-                        {/* <form name="new-acc-form" method="POST" data-netlify="true">
-                            <input type="hidden" name="form-name" value="new-acc-form" /> */}
-    <br/> <br/>
-                            <input type="text" name="firstname" placeholder='First Name' />
-                            <input type="text" name="lastname" placeholder='Last Name'/>
-                            <input type="email" name="email" placeholder='Email Address' />
-                            <input type="password" name="password" placeholder='Password' />
+                        {/* Netlify Form */}
 
-                            <a href={`/enroll`}> <button className='ca-btn' type='submit'>Create Account</button> </a>
-                            {/* <button className='google-btn'> <img src={GoogleImg}/> Signup with Google</button> */}
-                            
-                            <div className='ahaa-sub'> Already have an account? <a href={`/login`}> <span className='font-medium'>Login</span> </a> </div>
-                        {/* </form> */}
+                    <form name="contact-us" method="POST" data-netlify="true">
+                        <p>
+                            <label>Your Name: <input type="text" name="name" /></label>
+                        </p>
+                        <p>
+                            <label>Your Email: <input type="email" name="email" /></label>
+                        </p>
+                        <p>
+                            <button type="submit">Send</button>
+                        </p>
+                    </form>
+
 
                     </div>
                 </div>
