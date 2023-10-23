@@ -7,17 +7,17 @@ import '../css/auth.css'
 
 function CreateAccount() {
 
-    const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-        event.preventDefault()
-        const data = new FormData(event.currentTarget)
-        fetch('/', {
-            method: 'POST',
-            body: data,
-            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        })
-            .then(() => alert('Form submitted successfully!'))
-            .catch((error) => alert(error))
-    }
+    // const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    //     event.preventDefault()
+    //     const data = new FormData(event.currentTarget)
+    //     fetch('/', {
+    //         method: 'POST',
+    //         body: data,
+    //         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    //     })
+    //         .then(() => alert('Form submitted successfully!'))
+    //         .catch((error) => alert(error))
+    // }
 
     return(
         <>
@@ -30,7 +30,7 @@ function CreateAccount() {
                         <div className='disclaimer'><span>Disclaimer:</span> UniversityX is currently available to only a few selected Schools</div>
 
                         {/* Netlify Form */}
-                        <form name="create-account" method="POST" data-netlify="true" onSubmit={handleSubmit}>
+                        <form name="create-account" method="POST" data-netlify="true">
                             <input type="hidden" name="form-name" value="create-account" />
                             <div>
                                 <label htmlFor="name">Name:</label>
