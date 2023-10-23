@@ -1,50 +1,23 @@
-import { useState } from 'react';
+
 import Logo from '../images/UniversityX-Logo.png'
 import AuthImage from '../images/auth-image.png'
 // import GoogleImg from '../images/google-icon.svg'
 import '../css/auth.css'
 
 
-interface FormState {
-    name: string;
-    email: string;
-}
-
 function CreateAccount() {
-    const [formState, setFormState] = useState<FormState>({
-        name: '',
-        email: '',
-    });
 
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setFormState({
-            ...formState,
-            [e.target.name]: e.target.value,
-        });
-    };
-
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
-        const form = e.currentTarget;
+    const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault()
+        const data = new FormData(event.currentTarget)
         fetch('/', {
             method: 'POST',
+            body: data,
             headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-            body: encode({
-                'form-name': form.getAttribute('name')!,
-                ...formState,
-            }),
         })
-            .then(() => alert('Success!'))
-            .catch((error) => alert(error));
-    };
-
-    const encode = (data: any) => {
-        return Object.keys(data)
-            .map(
-                (key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key])
-            )
-            .join('&');
-    };
+            .then(() => alert('Form submitted successfully!'))
+            .catch((error) => alert(error))
+    }
 
     return(
         <>
@@ -57,39 +30,23 @@ function CreateAccount() {
                         <div className='disclaimer'><span>Disclaimer:</span> UniversityX is currently available to only a few selected Schools</div>
 
                         {/* Netlify Form */}
-
-                        <form
-                            name='contact'
-                            method='POST'
-                            data-netlify='true'
-                            onSubmit={handleSubmit}
-                        >
-                        <input type='hidden' name='form-name' value='contact' />
-
-                        <label>
-                            Your Name:{' '}
-                            <input
-                                type='text'
-                                name='name'
-                                value={formState.name}
-                                onChange={handleChange}
-                            />
-                        </label>
-
-                        <label>
-                            Your Email:{' '}
-                            <input
-                                type='email'
-                                name='email'
-                                value={formState.email}
-                                onChange={handleChange}
-                            />
-                        </label>
-
-                        <button type='submit'>Send</button>
-                    </form>
-
-
+                        <form name="create-account" method="POST" data-netlify="true" onSubmit={handleSubmit}>
+                            <input type="hidden" name="form-name" value="create-account" />
+                            <div>
+                                <label htmlFor="name">Name:</label>
+                                <input type="text" id="name" name="name" required />
+                            </div>
+                            <div>
+                                <label htmlFor="email">Email:</label>
+                                <input type="email" id="email" name="email" required />
+                            </div>
+                            <div>
+                                <label htmlFor="password">Password:</label>
+                                <input type="password" id="password" name="password" required />
+                            </div>
+                            <button type="submit">Create Account</button>
+                        </form>
+                        {/* End Netlify Form */}
                     </div>
                 </div>
 
