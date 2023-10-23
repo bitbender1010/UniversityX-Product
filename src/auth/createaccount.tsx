@@ -1,9 +1,50 @@
+import { useState } from 'react';
 import Logo from '../images/UniversityX-Logo.png'
 import AuthImage from '../images/auth-image.png'
 // import GoogleImg from '../images/google-icon.svg'
 import '../css/auth.css'
 
+
+interface FormState {
+    name: string;
+    email: string;
+}
+
 function CreateAccount() {
+    const [formState, setFormState] = useState<FormState>({
+        name: '',
+        email: '',
+    });
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setFormState({
+            ...formState,
+            [e.target.name]: e.target.value,
+        });
+    };
+
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        const form = e.currentTarget;
+        fetch('/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: encode({
+                'form-name': form.getAttribute('name')!,
+                ...formState,
+            }),
+        })
+            .then(() => alert('Success!'))
+            .catch((error) => alert(error));
+    };
+
+    const encode = (data: any) => {
+        return Object.keys(data)
+            .map(
+                (key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key])
+            )
+            .join('&');
+    };
 
     return(
         <>
@@ -17,16 +58,35 @@ function CreateAccount() {
 
                         {/* Netlify Form */}
 
-                    <form name="contact-us" method="POST" data-netlify="true">
-                        <p>
-                            <label>Your Name: <input type="text" name="name" /></label>
-                        </p>
-                        <p>
-                            <label>Your Email: <input type="email" name="email" /></label>
-                        </p>
-                        <p>
-                            <button type="submit">Send</button>
-                        </p>
+                        <form
+                            name='contact'
+                            method='POST'
+                            data-netlify='true'
+                            onSubmit={handleSubmit}
+                        >
+                        <input type='hidden' name='form-name' value='contact' />
+
+                        <label>
+                            Your Name:{' '}
+                            <input
+                                type='text'
+                                name='name'
+                                value={formState.name}
+                                onChange={handleChange}
+                            />
+                        </label>
+
+                        <label>
+                            Your Email:{' '}
+                            <input
+                                type='email'
+                                name='email'
+                                value={formState.email}
+                                onChange={handleChange}
+                            />
+                        </label>
+
+                        <button type='submit'>Send</button>
                     </form>
 
 
