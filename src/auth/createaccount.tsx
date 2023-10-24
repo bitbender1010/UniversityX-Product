@@ -5,22 +5,9 @@ const CreateAccount = () => {
 
 
     return (
-        <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" 
-        action="/dashboard">
-        
-        <input type="hidden" name="form-name" value="contact" />
-
-        <input type="text" placeholder="Name" name="name" required />
-        <input type="text" placeholder="Email" name="email" required />
-
-
-        <button
-          type="submit"
-        >
-          Send
-        </button>
-      </form>
-
+    <>
+        <button id="login-button">Log In / Sign Up</button>
+    </>
     );
 };
 

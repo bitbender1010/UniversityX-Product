@@ -14,6 +14,7 @@ import Schools from './schools/schools.tsx'
 import Error from './result/error.tsx'
 import Enroll from './result/enroll.tsx'
 
+
 import './index.css'
 
 
