@@ -139,7 +139,7 @@ function App() {
 {/* Footer */}
 <div className='footer'>
 <img src={Nigeria}/> 
-<div> Made for Students by Students </div>
+<div> Made in Nigeria, with</div>
 <img src={Love}/>
 </div>
 
