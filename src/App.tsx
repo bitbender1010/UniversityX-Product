@@ -60,7 +60,7 @@ function App() {
         </a>
 
         {/* Reserve Username */}
-        <a className='reserve-name' href={`login`}>
+        <a className='reserve-name' href={`https://csc-400.netlify.app/`}>
           or <span className='font-medium'> Login into your account </span>
         </a>
       </div>
