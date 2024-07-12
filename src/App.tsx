@@ -2,7 +2,6 @@
 
 import './App.css'
 import logo from './images/UniversityX-Logo.png'
-import not from './images/not-icon.png'
 import heroimg from './images/student-heroimg.png'
 
 import Icon1 from './images/icons/1.png'
