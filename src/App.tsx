@@ -52,16 +52,16 @@ function App() {
     {/* Hero Section */}
     <div className='grid grid-cols-2 mt-10 grid-hero-left'>
       <div className='body-padding-left'> 
-        <h1 className='font-semibold'>Study Smarter</h1>
-        <div className='flex items-center'> <img src={not} className='not-icon'/> <h1 className='font-semibold'>Harder...</h1> </div>
-        <div className='text mt-5'>Access online classes, download resources, track your progress and collaborate with friends, all in one app</div>
-        <a href={`/dashboard`}>
+        <h1 className='font-semibold'>AI-powered education management software for schools.</h1>
+{/*         <div className='flex items-center'> <img src={not} className='not-icon'/> <h1 className='font-semibold'>Harder...</h1> </div> */}
+        <div className='text mt-5'> Use artificial intelligence to optimize administrative workflows and processes. Move beyond traditional LMS and position your institution at the forefront of global education. </div>
+        <a href={`https://csc-400.netlify.app/`}>
           <button className='get-started mt-10 font-medium'>Try Demo</button> 
         </a>
 
         {/* Reserve Username */}
-        <a className='reserve-name' href={`https://csc-400.netlify.app/`}>
-          or <span className='font-medium'> Login into your account </span>
+        <a className='reserve-name' href={`https://youtu.be/AmGZkXUAJ18`}>
+          or <div className='font-medium'> Watch Video Demo </div>
         </a>
       </div>
 
