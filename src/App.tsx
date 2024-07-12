@@ -60,7 +60,7 @@ function App() {
 
         {/* Reserve Username */}
         <a className='reserve-name' href={`https://youtu.be/AmGZkXUAJ18`}>
-          or <div className='font-medium'> Watch Video Demo </div>
+          or <span className='font-medium'> Watch Video Demo </span>
         </a>
       </div>
 
