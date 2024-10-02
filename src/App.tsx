@@ -54,8 +54,8 @@ function App() {
         <h1 className='font-semibold'>AI-powered education management software for schools.</h1>
 {/*         <div className='flex items-center'> <img src={not} className='not-icon'/> <h1 className='font-semibold'>Harder...</h1> </div> */}
         <div className='text mt-5'> Use artificial intelligence to optimize administrative workflows and processes. Move beyond traditional LMS and position your institution at the forefront of global education. </div>
-        <a href={`https://csc-400.netlify.app/`}>
-          <button className='get-started mt-10 font-medium'>Try Demo</button> 
+        <a href={`https://docs.google.com/forms/d/e/1FAIpQLSfrkawDtJ5lRHZv2usW6q2_zEu8jtBSE3mag_U-YY8YPCshZA/viewform?usp=sf_link`}>
+          <button className='get-started mt-10 font-medium'>Book a Demo</button> 
         </a>
 
         {/* Reserve Username */}
