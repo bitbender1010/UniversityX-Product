@@ -1,4 +1,5 @@
 [[redirects]]
-from = "/*"
-to = "./index.html"
-status = 200
+    from = "/*"
+    to = "https://universityx.app"
+    status = 301
+    force = true
